@@ -60,6 +60,20 @@ Expanding brackets:
     12x³ - 16x² + 18x - 24x
     12x³ - 16x² - 6x
 ```
+-   When raising an expression with <b>two terms (in brackets) to an exponent</b>, our answer follows the formula Tᵣ₊₁ = (nCr)(xⁿ⁻ʳ)(yʳ). We can use a pattern of increasing/decreasing powers, along with pascals triangle to find our results. For example:
+```
+    - (a + b)² --> a² + 2ab + b²
+    - (a + b)³ --> a³ + 3a²b + 3ab² + b³
+    - (a + b)⁴ --> a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴
+```
+We can see that the exponent of the first variable decreases, the second varicable increases, and the coefficients follow pascals triangle. You can draw this manually:   
+![alt text](image-8.png)
+Or you can use nCr:
+````
+    - 2C0 = 1, 2C1 = 2, 2C2 = 1
+    - 3C0 = 1, 3C1 = 3, 3C2 = 3, 3C3 = 1
+```
+
 Factorising:
 -	Factorising is the opposite of expanding brackets in many ways, where we take a polynomial and revert it to its <b>factors</b>.
 -	Finding the <b>Highest Common Factor</b>. When possible, simply removing the HCF is an option. For example:
@@ -86,13 +100,54 @@ Factorising:
 ```
 -   We can thus apply this method in reverse, using the quadratic formula to find the roots.
 -	The <b>difference of two squares</b>. When an expression is in the form 
-(ax)2 - (bx)2, we know its factors are ax + bx, and ax - bx. For example:
+a² - b², we know its factors are a + b, and a - b. For example:
 ```
     - 4x² - 9 = (2x)² - (3)² --> (2x + 3)(2x - 3)
     - 16x⁴ - 1 = (4x2)² - (1)² --> (4x² + 1)(4x² - 1)
     - 4x² - 1 = (2x)² - (1)² --> (2x + 1)(2x - 1)
     - 4x² + 1 = (2x)² - (-1)² --> (2x - 1)(2x + 1)
 ```
+-	The <b>sum of two cubes</b>. When an expression is in the form 
+a³ + b³, we know its factors are a + b, and a² - ab + b². For example:
+```
+    - 8x³ + 27 = (2x)³ + (3)³ --> (2x + 3)(4x² - 6x + 9)
+    - 64x⁶ - 1 = (4x²)³ + (-1)³ --> (4x² - 1)(16x⁴ + 4x² + 1)
+```
 Solving equations:
 <b>Solving equations</b> can then be explained as finding the factors, and equating them to zero.
 There are three main ways of solving quadratic equations. The most reliable method is to use the quadratic formula.
+
+Simplifying Fractions:
+<b>Simplifying Algebraic Fractions</b> can be done in mostly the same way as with normal fractions.
+-   For <b>addition and subtraction</b>, find the <b>Lowest Common Multiple</b>, raise everything to the same denominator, and add/subtract as usual.
+-   For <b>multiplication</b>, multipy the numerators and denominators as usual.
+-   For <b>division</b>, flip the second fraction, and then complete as a multiplication problem.
+
+Long Division:
+<b>Long Division</b> can also be done in the same way as normal long division:
+```
+            2x² -  x  - 3
+           ___________________
+    x + 2 | 2x³ + 3x² - 5x - 6
+        -  (2x³ + 4x²)
+            __________
+                  -x² - 5x
+                -(-x² - 2x)
+                ___________
+                      - 3x - 6
+                    - (-3x - 6)
+                    ___________
+                             0
+```
+
+Graphing Equations:
+-   An <b>x-intercept</b> is where a graph crosses the x-axis (y=0).
+-   A <b>y-intercept</b> is where a graph crosses the y-axis (x=0).
+
+
+Simultaneous Equations:
+<b>Simultaneous Equations</b> can be solved three ways:
+-   Elimination: Multiplying equations by certain numbers to achieve opposite terms on subsequent lines. You can solve equations by using these terms to cancel each other out. Gets more difficult when dealing with high degree polynomials.
+-   Substitution: Rearranging equations to substitute variables for each other, to create equations with only variable. Reliable way to solve simultaneous equations, but more long winded.
+-   Graphing: Graphing each of the equations, and finding the points where they equate. This can be a simple visual way to solve simultaneous equations, but breaks down in high dimensions.
+
