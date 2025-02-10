@@ -1,2 +1,4 @@
 - √x = x^(1/2)
 - x^(-1) = 1/x
+- e(eulers number) = 2.71828 = 1 + 1/1! + 1/2! + 1/3!...
+- 0⁰ is not undefined, it is just not defined. There are two options for what 0⁰ could be, 0 and 1. Both answers have merit.
